@@ -1,0 +1,97 @@
+baseURL: "https://eof-d.github.io/"
+title: Blog
+paginate: 10
+theme: PaperMod
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+
+    taxonomies:
+      catageory: categories
+      tags: tags
+      series: series
+
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 1
+
+        - name: Posts
+          url: posts/
+          weight: 2
+
+        - name: Projects
+          url: projects/
+          weight: 3
+
+        - name: Archives
+          url: archives/
+          weight: 4
+
+        - name: Tags
+          url : tags/
+          weight: 5
+
+params:
+  title: Blog
+  description: "Welcome to my blog."
+  author: "Andy Zheng"
+  keywords: [Blog, Portfolio]
+
+  defaultTheme: auto
+  disableThemeToggle: falsde
+
+  showReadingTime: true
+  ShowShareButtons: true
+  ShowShareButtonsostNavLinks: true
+  showBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+
+  UseHugoToc: true
+  showtoc: false
+  tocopen: false
+
+  comments: false
+  hidemeta: false
+  hideSummary: false
+
+  label:
+    text: "My Blog"
+
+  profileMode:
+    enabled: false
+    title: "My Blog"
+
+  homeInfoParams:
+    socialIcons:
+        - name: github
+          url: "https://github.com/EOF-D/"
+
+    editPost:
+        URL: "https://github.com/EOF-D/EOF-D.github.io/content"
+        Text: "Suggest Changes"
+        appendFilePath: true
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+    highlight:
+        anchorLineNos: true
+        codeFences: true
+        style: onedark
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
