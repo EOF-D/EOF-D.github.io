@@ -1,8 +1,8 @@
 ---
-title: "Rattlesnake"
+title: "Serpentes"
 date: 2023-01-29T15:47:11-05:00
 description: "Outline of my new project."
-series: ["Rattlesnake"]
+series: ["Serpentes"]
 tags: ["python", "compiler design", "programming"]
 ShowToc: true
 TocOpen: true
@@ -11,7 +11,8 @@ A PVM (Python Virtual Machine) based programming language.
 This essentially means that the programming language is meant to be ran using
 Python.
 
-The name of the project is named after the rattlesnake :)
+The name of the project is named after snakes :)
+View the [GitHub Repo](https://github.com/EOF-D/serpentes)
 
 ## Tools
 
@@ -49,7 +50,7 @@ Proof-of-concept.
 
 --------------------------------------
 |	FuncDef(						 |
-|		name="hello_world",			 |
+|		name="hesnakes|
 |		body = [					 |
 |			Call(					 |
 |				name=Name("print")	 |
